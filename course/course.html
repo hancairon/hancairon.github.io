@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head Tag -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUNG SOO HAN</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/layout.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+    
+    <script src="../script/script.js" defer></script>
+</head>
+
+<!-- Body Tag -->
+<body>
+
+    <!-- Header Manu -->
+    <div class="col-3"></div>
+    <div class="col-6 header">
+        <div class="nav">
+            <ul class="header-list">
+              <li><a href="../index.html" class="link-home">HOME</a></li>
+              <li><a href="../resume/resume.html" class="link-resume">RESUME</a></li>
+              <li><a href="../course/course.html" class="link-course">COURSE</a></li>
+              <li><a href="../experience/experience.html" class="link-experience">EXPERIENCE</a></li>
+              <li><a href="../portfolio/portfolio.html" class="link-portfolio">PORTFOLIO</a></li>
+            </ul>
+          </div>
+
+    </div>
+
+    <!-- Personal Information on the left -->
+    <div class="row">
+        <div class="col-3 info">
+            <img src="../Images/Cairon2.JPG" class="photo" alt="Profile Picture">
+            <ul>
+                <li class="nav"><p>[Name]</p>     <p>Jung Soo Han</p></li>
+                <li class="nav"><p>[Job]</p>      <p>Computer Programmer</p></li>
+                <li class="nav"><p>[Email]</p>    <p>caironhan@gmail.com</p></li>
+                <li class="nav"><p>[Location]</p> <p>Ottawa, Ontario</p></li>
+            </ul>
+        </div>
+
+        <!-- Contents -->
+        <div class="col-6 text_body">            
+            <div class="contents_body">
+
+                <h2>Computer Programming Course Information</h2><br>
+
+                <!-- Sort button -->
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')">Show all</button>
+                    <button class="btn" onclick="filterSelection('level1')">LEVEL 1</button>
+                    <button class="btn" onclick="filterSelection('level2')">LEVEL 2</button>
+                    <button class="btn" onclick="filterSelection('level3')">LEVEL 3</button>
+                    <button class="btn" onclick="filterSelection('level4')">LEVEL 4</button>
+                    <button class="btn" onclick="sortListDir()">SORT</button>
+                    
+                    <hr>
+
+                    <!-- Course Lists -->
+                    <span><a href="#" class="filterDiv level1" onclick="brief1()">[LEVEL 1] CST 8101 - Computer Essentials</a></span>
+                    <span><a href="#" class="filterDiv level1" onclick="brief2()">[LEVEL 1] CST 8116 - Introduction to Computer Programming</a></span>
+                    <span><a href="#" class="filterDiv level1" onclick="brief3()">[LEVEL 1] CST 8215 - Introduction to Database</a></span>
+                    <span><a href="#" class="filterDiv level1" onclick="brief4()">[LEVEL 1] MAT 8001 - Tech Math for Computer Science</a></span>
+
+                    <span><a href="#" class="filterDiv level2" onclick="brief5()">[LEVEL 2] CST 2355 - Database Systems</a></span>
+                    <span><a href="#" class="filterDiv level2" onclick="brief6()">[LEVEL 2] CST 8102 - Operating System Fundamentals (GNU Linux)</a></span>
+                    <span><a href="#" class="filterDiv level2" onclick="brief7()">[LEVEL 2] CST 8284 - Object Oriented Programming (Java)</a></span>
+                    <span><a href="#" class="filterDiv level2" onclick="brief8()">[LEVEL 2] CST 8285 - Web Programming</a></span>
+                    <span><a href="#" class="filterDiv level2" onclick="brief9()">[LEVEL 2] ENL 2019T - Technical Communication for Engieering Technologies</a></span>
+
+                    <span><a href="#" class="filterDiv level3" onclick="brief10()">[LEVEL 3] CST 2234 - Systems Analysis and Design</a></span>
+                    <span><a href="#" class="filterDiv level3" onclick="brief11()">[LEVEL 3] CST 2335 - Mobile Graphical Interface Programming</a></span>
+                    <span><a href="#" class="filterDiv level3" onclick="brief12()">[LEVEL 3] CST 8109 - Network Programming</a></span>
+                    <span><a href="#" class="filterDiv level3" onclick="brief13()">[LEVEL 3] CST 8288 - Object Oriented Programming with Design Patterns</a></span>
+                    <span><a href="#" class="filterDiv level3" onclick="brief14()">[LEVEL 3] CST 8390 - Business Intelligence and Data Analytics</a></span>
+
+                    <span><a href="#" class="filterDiv level4" onclick="brief15()">[LEVEL 4] CST 8277 - Enterprise Application Programming</a></span>
+                    <span><a href="#" class="filterDiv level4" onclick="brief16()">[LEVEL 4] CST 8333 - Programming Language Research Project</a></span>
+                    <span><a href="#" class="filterDiv level4" onclick="brief17()">[LEVEL 4] CST 8276 - Advanced Database Topics</a></span>
+                    <span><a href="#" class="filterDiv level4" onclick="brief18()">[LEVEL 4] CST 8334 - Software Development Project</a></span>
+                    <span><a href="#" class="filterDiv level4" onclick="brief19()">[LEVEL 4] GED 0336 - General Education Elective</a></span>
+                </div>
+                <hr>
+                <br>
+                <p>OR</p><br>
+
+                <!-- Search Engine -->
+                <h2>Course Search</h2>
+
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+                <br> <br>
+
+                <!-- Course Breif Area -->
+                <h2>Course Brief (Click course above)</h2>
+                <hr>
+
+                <p id="demo"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
