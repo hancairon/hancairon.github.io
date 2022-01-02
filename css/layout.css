@@ -202,9 +202,9 @@ a:hover.link-portfolio { opacity: 0.5; }
   .btn {
     padding: 5px 5px;
     cursor: pointer;
-    width: 80px;
-    height: 30px;
-    font-size: 15px;
+    width: 70px;
+    height: 20px;
+    font-size: 10px;
     font-weight: bold;
     color: #ffffff;
     outline: oldlace;
